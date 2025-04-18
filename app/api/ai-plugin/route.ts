@@ -5,8 +5,8 @@ export async function GET() {
   const pluginData = {
     openapi: '3.0.0',
     info: {
-      title: 'Boilerplate',
-      description: 'API for the boilerplate',
+      title: 'Bitte Sui Agent',
+      description: 'API for the Bitte Sui Agent',
       version: '1.0.0',
     },
     servers: [
@@ -15,9 +15,9 @@ export async function GET() {
       },
     ],
     'x-mb': {
-      'account-id': ACCOUNT_ID,
+      'account-id': "surgecode.near",
       assistant: {
-        name: 'Your Assistant',
+        name: 'Bitte Sui Agent',
         description:
           'An assistant that helps users interact with the Sui blockchain by checking balances, swapping tokens, and staking SUI.',
         instructions:
