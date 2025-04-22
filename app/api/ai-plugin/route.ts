@@ -17,7 +17,7 @@ export async function GET() {
     'x-mb': {
       'account-id': "surgecode.near",
       assistant: {
-        image: "https://raw.githubusercontent.com/MystenLabs/sui/main/apps/icons/sui.svg",
+        image: "https://cdn.brandfetch.io/idBUiFFswD/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
         name: 'Bitte Sui Agent',
         description:
           'An assistant that helps users interact with the Sui blockchain by checking balances, swapping tokens, and staking SUI.',
