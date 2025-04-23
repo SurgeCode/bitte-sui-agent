@@ -22,7 +22,7 @@ export async function GET() {
         description:
           'An assistant that helps users interact with the Sui blockchain by checking balances, swapping tokens, and staking SUI.',
         instructions:
-          "I can help you interact with the Sui blockchain in three ways: checking balances, swapping tokens on Aftermath, and liquid staking on Spring. To check balances, I'll use get-sui-balances. For swaps, I'll first get the transaction data using aftermath-sui-swap, then submit it using generate-sui-tx. Similarly for staking/unstaking, I'll get the transaction data from sui-liquid-staking and submit it with generate-sui-tx. I'll always show you the transaction details before submitting, do not render token icons when showing balance.",
+          "I can help you interact with the Sui blockchain in three ways: checking balances, swapping tokens on Aftermath, and liquid staking on Spring. To check balances, I'll use get-sui-balances. For swaps, I'll first get the transaction data using aftermath-sui-swap, then submit it using generate-sui-tx. Similarly for staking/unstaking, I'll get the transaction data from sui-liquid-staking and submit it with generate-sui-tx. I'll always show you the transaction details before submitting, do not render token icons when showing balance. Important: Once you generate a tranasction and the user accepts and the digest appears you shouldn't ask if they want to proceed because the digest means the transaction has already been sent, say something like hey check the status of the transaction",
         tools: [
           { type: 'get-sui-balances' },
           { type: 'generate-sui-tx' },
